@@ -1,7 +1,42 @@
-For my MSc dissertation, I developed a personalised robot avatar capable of real-time facial and speech synchronisation, with the goal of exploring more natural and engaging human–machine interaction. The project combined computer vision, natural language processing, and 3D modelling into a single interactive system.
+# Conversational Robot Avatar
 
-I used photogrammetry to build a realistic 3D facial model and implemented blendshapes in Unity to animate expressions dynamically. For speech and dialogue, I integrated large language model APIs to generate unscripted, context-aware responses, while synchronising facial movements with audio output to create lifelike interaction. I built the backend logic in Python, managing data pipelines, API integration, and response control.
+A real-time personalised robot avatar combining large language models, 
+3D facial modelling, and speech synchronisation for natural human-robot interaction.
 
-The project demonstrated how advanced AI can be combined with expressive visual design to create engaging, responsive avatars. It was awarded a Distinction, and it highlighted my ability to deliver a complex, multidisciplinary project from concept through to deployment, with both technical and user-focused outcomes.
+## Overview
 
-Some Images, as well as the Unity software aspec,t have not been included due to Privacy reasons, but the results can still be produced by reading the dissertation PDF.
+The system creates a responsive avatar by integrating ChatGPT for dialogue 
+generation with Furhat Robotics for physical expression and speech output. 
+Photogrammetry was used to build realistic 3D facial models, with blendshapes 
+applied in Blender to enable dynamic expression control.
+
+## How it works
+
+1. A participant's face is captured using photogrammetry and reconstructed in Blender
+2. Blendshapes are applied to enable real-time facial expression control
+3. The Furhat SDK maps the 3D model onto the robot and handles speech synthesis
+4. ChatGPT API generates context-aware responses during live conversation
+5. Python manages the backend — API calls, conversation flow, and Furhat remote control
+
+## Results
+
+- Achieved natural speech and facial expression synchronisation in real time
+- Successfully deployed personalised avatars for two participants
+- Awarded a Distinction — MSc Artificial Intelligence, University of Kent (2024)
+
+## Tech Stack
+
+Python · ChatGPT API · Furhat SDK · Blender · Unity · Photogrammetry
+
+## Structure
+
+- `notebooks/` — Jupyter notebooks for ChatGPT integration, voice interaction, and gesture control
+- `assets/blender/` — 3D facial models and blendshape exports
+- `assets/furhat/` — Face application configs and Blockly conversation flows
+- `assets/unity/` — Unity scene files and 3D model imports
+- `docs/report.pdf` — Full dissertation and methodology
+
+## Note
+
+Some participant images are excluded for privacy reasons. Full methodology, 
+results, and visual outputs are documented in `docs/report.pdf`.
