@@ -26,17 +26,16 @@ applied in Blender to enable dynamic expression control.
 
 ## Tech Stack
 
-Python · ChatGPT API · Furhat SDK · Blender · Unity · Photogrammetry
+Python · ChatGPT API · Furhat SDK · Blender · Photogrammetry
 
 ## Structure
 
 - `notebooks/` — Jupyter notebooks for ChatGPT integration, voice interaction, and gesture control
 - `assets/blender/` — 3D facial models and blendshape exports
 - `assets/furhat/` — Face application configs and Blockly conversation flows
-- `assets/unity/` — Unity scene files and 3D model imports
 - `docs/report.pdf` — Full dissertation and methodology
 
 ## Note
 
-Some participant images are excluded for privacy reasons. Full methodology, 
-results, and visual outputs are documented in `docs/report.pdf`.
+Some participant images and Unity assets are excluded for privacy and licensing reasons. 
+Full methodology, results, and visual outputs are documented in `docs/report.pdf`.
